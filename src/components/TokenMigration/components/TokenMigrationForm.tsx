@@ -181,7 +181,7 @@ export const TokenMigrationFormUI = ({
 
   const handleSubmit = () => {
     if (isFormValid) {
-      fetchUniversalGasPriceEstimate(values.network, values.account)
+      fetchUniversalGasPriceEstimate(values.network)
         .then((gas) => {
           onComplete({ ...values, ...gas });
         })

@@ -263,7 +263,7 @@ export const MembershipFormUI = ({
                 loading={isSubmitting}
                 onClick={() => {
                   if (isValid) {
-                    fetchUniversalGasPriceEstimate(values.network, values.account).then((gas) => {
+                    fetchUniversalGasPriceEstimate(values.network).then((gas) => {
                       onComplete({ ...values, ...gas });
                     });
                   }
