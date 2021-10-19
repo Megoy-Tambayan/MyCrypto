@@ -14,6 +14,7 @@ import { networkSaga } from './network.slice';
 import { nftSaga } from './nft.slice';
 import { notificationSaga } from './notification.slice';
 import { persistenceSaga } from './persistence.slice';
+import { promoPoapsSaga } from './promoPoaps.slice';
 import { ratesSaga } from './rates.slice';
 import { importSaga } from './root.reducer';
 import { settingsSaga } from './settings.slice';
@@ -39,6 +40,7 @@ export default function* rootSaga() {
     notificationSaga(),
     claimsSaga(),
     accountUndoSaga(),
-    nftSaga()
+    nftSaga(),
+    promoPoapsSaga()
   ]);
 }
