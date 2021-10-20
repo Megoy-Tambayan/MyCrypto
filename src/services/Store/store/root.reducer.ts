@@ -17,7 +17,6 @@ import membershipSlice from './membership.slice';
 import nftSlice from './nft.slice';
 import { APP_PERSIST_CONFIG, createPersistReducer, migrate } from './persist.config';
 import persistenceSlice from './persistence.slice';
-import promoPoapsSlice from './promoPoaps.slice';
 import { getAppState } from './selectors';
 import tokenScanningSlice from './tokenScanning.slice';
 import txHistorySlice from './txHistory.slice';
@@ -34,8 +33,7 @@ const reducers = combineReducers({
   [ensSlice.name]: ensSlice.reducer,
   [claimSlice.name]: claimSlice.reducer,
   [accountUndoSlice.name]: accountUndoSlice.reducer,
-  [nftSlice.name]: nftSlice.reducer,
-  [promoPoapsSlice.name]: promoPoapsSlice.reducer
+  [nftSlice.name]: nftSlice.reducer
 });
 
 /**
