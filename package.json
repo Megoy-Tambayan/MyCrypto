@@ -45,7 +45,7 @@
     "ethereumjs-abi": "0.6.8",
     "ethereumjs-util": "6.0.0",
     "font-awesome": "4.7.0",
-    "formik": "2.1.4",
+    "formik": "2.4.3",
     "graphql": "15.0.0",
     "hdkey": "1.1.1",
     "idempotent-babel-polyfill": "7.4.4",
